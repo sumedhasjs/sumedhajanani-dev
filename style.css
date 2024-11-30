@@ -1,87 +1,91 @@
-/* General Styles */
+/* Importing Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General Page Styles */
 body {
-    font-family: 'Poppins', sans-serif; /* Aesthetic and modern font */
+    font-family: 'Poppins', sans-serif; /* Custom font */
+    background-color: #f9f4fc; /* Very light lavender/cream */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #f3f0fc; /* Light lavender background */
-    color: #333;
+    color: #4a3b5e; /* Darker text for contrast */
 }
 
-header {
-    background-color: #6c5ce7; /* Main header color */
-    padding: 1rem 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Navigation Bar */
+nav {
+    background-color: #f3e5f5; /* Light lavender background */
+    padding: 10px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.nav-link {
+    color: #6c5b7b; /* Dark lavender shade */
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.1rem;
+}
+
+.nav-link:hover {
+    color: #d6c6e1; /* Lighter lavender */
+}
+
+/* Page Header */
+.page-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #6c5b7b; /* Matches the link color */
+}
+
+/* Contact Me Section */
+.contact-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-paragraph {
+    font-size: 1rem;
+    color: #4a3b5e; /* Slightly darker for contrast */
+    margin: 0 20px;
+}
+
+/* Social Media Icons */
+.social-icons {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 15px;
+    margin: 20px 0;
 }
 
-nav ul li {
-    display: inline;
+.social-icons i {
+    font-size: 2rem; /* Adjust icon size */
+    color: #6c5b7b; /* Lavender shade */
+    transition: color 0.3s ease;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff; /* White text for contrast */
-    font-weight: 600; /* Slightly bold for visibility */
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #ffffff; /* White background on hover */
-    color: #6c5ce7; /* Lavender text on hover */
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.profile-photo {
-    max-width: 200px;
-    border-radius: 50%;
-    margin: 1rem auto;
-    display: block;
-    border: 5px solid #6c5ce7; /* Adding a border around the photo */
-}
-
-.home-content {
-    margin-top: 2rem;
-}
-
-.tagline {
-    color: #555;
-    font-style: italic;
-    margin-bottom: 1rem;
+.social-icons i:hover {
+    color: #d6c6e1; /* Lighter lavender */
 }
 
 /* Footer */
 footer {
-    background-color: #6c5ce7; /* Matching footer color */
-    color: #ffffff;
-    padding: 1rem;
+    background-color: #f3e5f5; /* Matches the navigation bar */
+    padding: 10px;
     text-align: center;
+    color: #6c5b7b;
+    font-size: 0.9rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+    .nav-link {
+        display: block;
+        margin-bottom: 10px;
     }
-    
-    .profile-photo {
-        max-width: 150px;
+
+    .social-icons i {
+        font-size: 1.5rem; /* Smaller size for smaller screens */
+    }
+
+    .contact-paragraph {
+        font-size: 0.9rem; /* Adjust for smaller screens */
     }
 }
