@@ -3,20 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumedha Janani's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sumedha Janani Siriyapuraju</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Sumedha Janani's Website</h1>
-        <p>Exploring my work, projects, and interests.</p>
+        <nav>
+            <ul>
+                <li><a href="#overview">Home</a></li>
+                <li><a href="https://sumedhajanani.dev/education">Education</a></li>
+                <li><a href="https://sumedhajanani.dev/experience">Experience</a></li>
+                <li><a href="https://sumedhajanani.dev/projects">Projects</a></li>
+                <li><a href="https://sumedhajanani.dev/veena">Veena</a></li>
+                <li><a href="https://sumedhajanani.dev/blogs">Blogs</a></li>
+                <li><a href="https://sumedhajanani.dev/contactme">Contact Me</a></li>
+            </ul>
+        </nav>
     </header>
-    <section>
-        <h2>About Me</h2>
-        <p>Hello! I'm Sumedha, a tech enthusiast and published author. This is my portfolio where I share my work and passions.</p>
+
+    <section id="overview" class="section home">
+        <div class="container">
+            <div class="home-content">
+                <img src="images/my-photo.jpg" alt="Sumedha Janani Siriyapuraju" class="profile-photo">
+                <h1>Sumedha Janani Siriyapuraju</h1>
+                <p class="tagline">Electronics and Communication Engineer | Analyst at Deloitte | AI/ML in Healthcare Enthusiast | Veena Artist | Published Author</p>
+                <p>Sumedha Janani Siriyapuraju is an Analyst at Deloitte, specializing in Oracle BI Publisher and Oracle Integration Cloud. As a published author and researcher, she has explored many topics, but aims to make an impact in the healthcare industry. Her journey combines technical expertise with creative pursuits, including playing the veena for All India Radio and contributing to cultural preservation. She’s committed to lifelong learning and aspires to drive innovation at the intersection of technology and impact.</p>
+            </div>
+        </div>
     </section>
+
     <footer>
-        <p>&copy; 2024 Sumedha Janani. All rights reserved.</p>
+        <p>&copy; 2024 Sumedha Janani Siriyapuraju. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
