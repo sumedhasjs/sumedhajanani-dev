@@ -14,10 +14,9 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/my-photo.jpg-removebg-preview__1_-removebg-preview.png);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: bottom right;
+    background-image: url(images/Web\ Design\ Portfolio\ Presentation\ in\ Pink\ Purple\ Orange\ Digitalism\ Style\ \(2\).png);
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
 }
 .container{
@@ -335,7 +334,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/my-photo.jpg-removebg-preview__1_-removebg-preview.png);
+        background-image: url(images/Untitled\ design\ \(3\).png);
     }
     .header-text{
         margin-top: 100%;
